@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.89
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeeSharpRun.Office.AzureIconsAddIn", "SeeSharpRun.Office.AzureIconsAddIn\SeeSharpRun.Office.AzureIconsAddIn.csproj", "{48CCE8F9-72C4-436D-8EFA-D601A00BECDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeeSharpRun.Office.AzureIconsAddIn.Web", "SeeSharpRun.Office.AzureIconsAddIn.Web\SeeSharpRun.Office.AzureIconsAddIn.Web.csproj", "{3A1A9FED-4CF7-4905-AF2A-D12286F9F9B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48CCE8F9-72C4-436D-8EFA-D601A00BECDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48CCE8F9-72C4-436D-8EFA-D601A00BECDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48CCE8F9-72C4-436D-8EFA-D601A00BECDF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{48CCE8F9-72C4-436D-8EFA-D601A00BECDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48CCE8F9-72C4-436D-8EFA-D601A00BECDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48CCE8F9-72C4-436D-8EFA-D601A00BECDF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3A1A9FED-4CF7-4905-AF2A-D12286F9F9B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A1A9FED-4CF7-4905-AF2A-D12286F9F9B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A1A9FED-4CF7-4905-AF2A-D12286F9F9B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A1A9FED-4CF7-4905-AF2A-D12286F9F9B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E743745D-F077-46E3-8F85-0FD1959C01F3}
+	EndGlobalSection
+EndGlobal

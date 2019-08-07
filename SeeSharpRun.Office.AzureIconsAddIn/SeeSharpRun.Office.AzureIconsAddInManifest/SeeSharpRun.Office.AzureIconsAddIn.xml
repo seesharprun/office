@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xsi:type="TaskPaneApp"
+  xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+  xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides">
+  <Id>1053cc07-ee7c-4567-a39a-47301e12e293</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>SeeSharpRun.NET</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Azure Icons" />
+  <Description DefaultValue="Insert official Azure vector icons into your presentation."/>
+  <IconUrl DefaultValue="~remoteAppUrl/img/Button32x32.png" />
+  <SupportUrl DefaultValue="https://github.com/seesharprun/office/issues" />
+  <Hosts>
+    <Host Name="Presentation" />
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="~remoteAppUrl/index.html" />
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Hosts>
+      <Host xsi:type="Presentation">
+        <DesktopFormFactor>
+          <GetStarted>
+            <Title resid="Contoso.GetStarted.Title"/>
+            <Description resid="Contoso.GetStarted.Description"/>
+            <LearnMoreUrl resid="Contoso.GetStarted.LearnMoreUrl"/>
+          </GetStarted>
+          <ExtensionPoint xsi:type="PrimaryCommandSurface">
+            <OfficeTab id="TabHome">
+              <Group id="SeeSharpRun.Office">
+                <Label resid="SeeSharpRun.Office.Label" />
+                <Icon>
+                  <bt:Image size="16" resid="Contoso.Office.Icons.16" />
+                  <bt:Image size="20" resid="Contoso.Office.Icons.20" />
+                  <bt:Image size="24" resid="Contoso.Office.Icons.24" />
+                  <bt:Image size="32" resid="Contoso.Office.Icons.32" />
+                  <bt:Image size="40" resid="Contoso.Office.Icons.40" />
+                  <bt:Image size="48" resid="Contoso.Office.Icons.48" />
+                  <bt:Image size="64" resid="Contoso.Office.Icons.64" />
+                  <bt:Image size="80" resid="Contoso.Office.Icons.80" />
+                </Icon>
+                <Control xsi:type="Button" id="Contoso.TaskpaneButton">
+                  <Label resid="Contoso.TaskpaneButton.Label" />
+                  <Supertip>
+                    <Title resid="Contoso.TaskpaneButton.Label" />
+                    <Description resid="Contoso.TaskpaneButton.Tooltip" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Contoso.Office.Icons.16" />
+                    <bt:Image size="20" resid="Contoso.Office.Icons.20" />
+                    <bt:Image size="24" resid="Contoso.Office.Icons.24" />
+                    <bt:Image size="32" resid="Contoso.Office.Icons.32" />
+                    <bt:Image size="40" resid="Contoso.Office.Icons.40" />
+                    <bt:Image size="48" resid="Contoso.Office.Icons.48" />
+                    <bt:Image size="64" resid="Contoso.Office.Icons.64" />
+                    <bt:Image size="80" resid="Contoso.Office.Icons.80" />
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>SeeSharpRun.Office.Button</TaskpaneId>
+                    <SourceLocation resid="Contoso.Taskpane.Url" />
+                  </Action>
+                </Control>
+              </Group>
+            </OfficeTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+    <Resources>
+      <bt:Images>
+        <bt:Image id="Contoso.Office.Icons.16" DefaultValue="~remoteAppUrl/img/icon_16x16.png" />
+        <bt:Image id="Contoso.Office.Icons.20" DefaultValue="~remoteAppUrl/img/icon_20x20.png" />
+        <bt:Image id="Contoso.Office.Icons.24" DefaultValue="~remoteAppUrl/img/icon_24x24.png" />
+        <bt:Image id="Contoso.Office.Icons.32" DefaultValue="~remoteAppUrl/img/icon_32x32.png" />
+        <bt:Image id="Contoso.Office.Icons.40" DefaultValue="~remoteAppUrl/img/icon_40x40.png" />
+        <bt:Image id="Contoso.Office.Icons.48" DefaultValue="~remoteAppUrl/img/icon_48x48.png" />
+        <bt:Image id="Contoso.Office.Icons.64" DefaultValue="~remoteAppUrl/img/icon_64x64.png" />
+        <bt:Image id="Contoso.Office.Icons.80" DefaultValue="~remoteAppUrl/img/icon_80x80.png" />
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="Contoso.Taskpane.Url" DefaultValue="~remoteAppUrl/index.html" />
+        <bt:Url id="Contoso.GetStarted.LearnMoreUrl" DefaultValue="https://seesharprun.github.io/office" />
+      </bt:Urls>
+      <bt:ShortStrings>
+        <bt:String id="Contoso.TaskpaneButton.Label" DefaultValue="Add Azure Icon" />
+        <bt:String id="SeeSharpRun.Office.Label" DefaultValue="Azure" />
+        <bt:String id="Contoso.GetStarted.Title" DefaultValue="Get started adding Azure icons!" />
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <bt:String id="Contoso.TaskpaneButton.Tooltip" DefaultValue="Click to Add an Azure Icon" />
+        <bt:String id="Contoso.GetStarted.Description" DefaultValue="You can now add icons to your presentation. Go to the HOME tab and click the 'Add Azure Icon' button to get started." />
+      </bt:LongStrings>
+    </Resources>
+  </VersionOverrides>
+</OfficeApp>
