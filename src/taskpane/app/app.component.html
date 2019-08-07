@@ -1,0 +1,14 @@
+<div class="ms-Grid">
+        <div class="ms-Grid-row">
+            <button class="ms-Button ms-Button--compound ms-Grid-col ms-sm-12 ms-depth-16" *ngFor="let asset of assets" (click)="insert(asset.content)">
+                <span class="ms-Button-icon">
+                    <i class="ms-Icon ms-Icon--plus"></i>
+                </span> 
+                <span class="ms-Button-label">
+                    {{ asset.title }}
+                </span> 
+                <span class="ms-Button-description" innerHtml="{{ asset.content | sanitize }}">                    
+                </span> 
+            </button>
+        </div>
+    </div>
