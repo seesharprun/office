@@ -1,4 +1,5 @@
 export class Asset {
     title: string;
-    content: string
+    content: string;
+    category: string;
 }

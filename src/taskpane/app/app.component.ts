@@ -12,6 +12,19 @@ export class AppComponent {
 	ngOnInit(): void {
 		this.assets = Assets;
 	}
+	split(assets: Asset[]): Asset[][] {
+		var results = [];
+		for (var i = 0; i < assets.length; i += 3) {
+			var row = [];
+			for (var j = 0; j < 3; j++) {
+				var value = assets[i + j];
+				if (!value) break;
+				row.push(value);
+			}
+			results.push(row);
+		}
+		return results;
+	}
 	async insert(content) {
 		Office.context.document.setSelectedDataAsync(content,
 			{
